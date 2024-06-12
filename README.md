@@ -1,6 +1,6 @@
 # 감정 분석 모델을 활용한 음악 생성 프로그램<br/>Music Face
 
-## :alarm_clock: 개발 기간: 5월 9일(목) ~ 6월 4일(수)
+## :alarm_clock: 개발 기간: 2024년 5월 9일(목) ~ 2024년 6월 4일(수)
 ![music_face](https://github.com/Jinwonie/music_face/assets/155731578/d5015b6b-bfe7-4877-8e6b-51e6964ac89b)
 ## 개발환경:
 |IDE|프로그래밍<br/>언어|
@@ -8,11 +8,15 @@
 |![Coalb](https://img.shields.io/badge/Colab-F9AB00?style=for-the-badge&logo=googlecolab&color=525252)|![PYTHON](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)|
 
 ## :people_holding_hands: 멤버구성 및 역할
+[조장]
+
+천진원: EDA, Modeling, crop & seg, PPT
+
+[조원]
+
 김윤성: EDA, Modeling, Model ensemble, Presentation
 
 정강빈: EDA, Modeling, preprocessing, MusicFace 개발
-
-천진원: EDA, Modeling, crop & seg, PPT
 
 한재현: EDA, Modeling, 서기
 
