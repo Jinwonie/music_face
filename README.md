@@ -79,10 +79,6 @@ ConvNeXt, ResNet v2, DenseNet, MobileNet v2/v3, Inception v3, BEIT, SWIN, YOLO v
 Before using the library or REST API, you must sign up on the suno.ai website and obtain your cookie as shown in this screenshot.
 You can find cookie from the Web Browser's Developer Tools -> Network Tab -> Filter: _clerk_js_version
 
-Music Face에서 사용되는 모델의 경우 용량이 큰 관계로 구글 드라이브 링크를 첨부해드립니다. Submission/Models 폴더 내에 있는 best_model.pt, swinv2_ages.pt, swinv2_gender.pt 파일을 다운받아 이용해주세요.
-
-[Google Drive](https://drive.google.com/drive/u/0/folders/1BNF7E2JYfD7p42UU6ymU-nXpWdB1cFyD)
-
 ![prerequisites](https://github.com/Jinwonie/music_face/assets/155731578/20586ae8-c1d7-434e-be6e-6e5bf57b8b0f)
 
 > ### Input your cookie 
