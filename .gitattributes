@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+best_model.pt filter=lfs diff=lfs merge=lfs -text
+swinv2_ages.pt filter=lfs diff=lfs merge=lfs -text
+swinv2_gender.pt filter=lfs diff=lfs merge=lfs -text
