@@ -36,23 +36,26 @@
 
 ## :robot: 모델 개발
 > ### EDA
-1. Json 파일을 DataFrame으로 변환 후 각종 정보를 확인했습니다.
+1. Json 파일을 DataFrame으로 변환 후 각종 정보를 확인
 
-각 이미지 데이터의 라벨링, 나이, 성별, 배경정보, Bounding Box 정보 등 각종 정보가 처리되어 있습니다.
 ![image](https://github.com/DPTure/Team5/assets/155731578/3a5cbfc6-8756-4f12-a58d-1ef9186dd7bf)
 
-2. 기초 통계 정보를 확인했습니다.
+- 각 이미지 데이터의 라벨링, 나이, 성별, 배경정보, Bounding Box 정보 등 각종 정보가 처리되어 있음
 
-3. 간단한 시각화를 통해 데이터의 분포를 확인했습니다. 감정에 대한 데이터 불균형은 존재하지 않습니다.
+2. 기초 통계 정보 확인
+
+3. 데이터의 분포 확인
 ![image](https://github.com/DPTure/Team5/assets/155731578/695528c1-6612-4e9c-83d9-92f7e9ab0669)
 ![image](https://github.com/DPTure/Team5/assets/155731578/80930595-dadf-401e-a41a-486d11f59671)
 ![image](https://github.com/DPTure/Team5/assets/155731578/463d0ce4-4755-4953-adb3-fe37ae62503b)
 ![image](https://github.com/DPTure/Team5/assets/155731578/a30529cf-c8e3-406f-8069-e866085fec4a)
 ![image](https://github.com/DPTure/Team5/assets/155731578/984407c3-a7ea-4f16-bb7c-d51094314ade)
 
+- 감정에 대한 데이터 불균형은 존재하지 않았음
+
 
 > ### Preprocessing
-1. 사진 데이터 crop & crop+seg 작업을 진행했습니다.
+1. 사진 데이터 crop & crop+seg 작업 진행
 
 crop
 
@@ -66,22 +69,20 @@ crop & seg
 ![image](https://github.com/DPTure/Team5/assets/155731578/7ec94f04-92f7-486a-89d3-4d68ca533953)
 
 
-2. array 변환, 차원 추가 및 resize 전처리 작업을 수행했습니다.
+2. array 변환, 차원 추가 및 resize 전처리 작업 수행
 
 > ### Modeling & Model ensemble
 
-ConvNeXt, ResNet v2, DenseNet, MobileNet v2/v3, Inception v3, BEIT, SWIN, YOLO v8 모델을 돌려보고 loss 및 acc를 측정하였고,
-모델 앙상블을 진행했습니다.
+ConvNeXt, ResNet v2, DenseNet, MobileNet v2/v3, Inception v3, BEIT, SWIN, YOLO v8 모델 loss 및 acc 측정 및 모델 앙상블 진행
 
-모든 모델들의 loss와 acc를 측정한 결과, 단일 모델인 BEIT가 loss 0.5846, acc 87.33%로 가장 높은 성능을 보였습니다. 따라서 BEIT를 감정 분석 모델로 선정했습니다.
+모든 모델들의 loss와 acc를 측정한 결과, 단일 모델인 BEIT가 loss 0.5846, acc 87.33%로 가장 높은 성능이 나왔음
+
+따라서 BEIT를 감정 분석 모델로 선정
+
 > ### Prerequisites
 
 Before using the library or REST API, you must sign up on the suno.ai website and obtain your cookie as shown in this screenshot.
 You can find cookie from the Web Browser's Developer Tools -> Network Tab -> Filter: _clerk_js_version
-
-Music Face에서 사용되는 모델의 경우 용량이 큰 관계로 구글 드라이브 링크를 첨부해드립니다. Submission/Models 폴더 내에 있는 best_model.pt, swinv2_ages.pt, swinv2_gender.pt 파일을 다운받아 이용해주세요.
-
-[Google Drive](https://drive.google.com/drive/u/0/folders/1BNF7E2JYfD7p42UU6ymU-nXpWdB1cFyD)
 
 ![prerequisites](https://github.com/Jinwonie/music_face/assets/155731578/20586ae8-c1d7-434e-be6e-6e5bf57b8b0f)
 
